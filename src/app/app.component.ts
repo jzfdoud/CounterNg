@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template:"<app-counter></app-counter>",
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'counter-angular';
+  nbr: number=0;
+  inc():void {this.nbr++;}
+  dec():void {this.nbr--;}
+
 }
